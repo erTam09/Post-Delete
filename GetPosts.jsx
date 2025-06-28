@@ -43,9 +43,6 @@ const GetPosts = () => {
             <h2 className="font-bold text-xl">{post.title}</h2>
             <p>{post.content}</p>
             <div className="w-[90%] flex space-x-3 justify-start ml-4 mt-4">
-              <button className="border-0 bg-purple-800 text-white rounded-sm p-2 w-20" onClick={()=> navigate(`/post/${post._id}`)}>
-                Edit
-              </button>
               <button className="border-0 bg-green-700 text-white rounded-sm p=2 w-20" onClick={()=>handleDelete(post._id)} >
                 Delete
               </button>
